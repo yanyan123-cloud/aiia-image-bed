@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="680" viewBox="0 0 1240 680" role="img" aria-labelledby="title desc">
+  <title id="title">独立验证循环</title>
+  <desc id="desc">模型生成候选补丁后，独立检查决定通过、带错误信息重试或交给人处理。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" refX="12" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#52616B"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#18364A" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="1240" height="680" fill="#F7FAFC"/>
+  <rect x="40" y="32" width="1160" height="82" rx="18" fill="#143A52"/>
+  <text x="76" y="80" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="31" font-weight="700" fill="#FFFFFF">独立验证循环：测试结果决定任务状态</text>
+  <text x="76" y="102" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#D7E8F0">模型可以提出修复方案，但不负责单独判定方案是否通过</text>
+
+  <rect x="54" y="156" width="266" height="410" rx="18" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="82" y="194" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#475569">模型侧</text>
+  <rect x="76" y="236" width="220" height="105" rx="14" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="186" y="278" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="21" font-weight="700" fill="#5B21B6">生成候选补丁</text>
+  <text x="186" y="309" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">提出可能的修复</text>
+
+  <rect x="346" y="156" width="500" height="410" rx="18" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="374" y="194" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#475569">模型外部的检查与裁定</text>
+  <rect x="374" y="236" width="180" height="105" rx="14" fill="#DCFCE7" stroke="#22C55E" stroke-width="2" filter="url(#shadow)"/>
+  <text x="464" y="278" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="21" font-weight="700" fill="#166534">运行独立检查</text>
+  <text x="464" y="309" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">测试、编译或静态检查</text>
+  <polygon points="735,230 835,288 735,346 635,288" fill="#FFF7ED" stroke="#FB923C" stroke-width="2" filter="url(#shadow)"/>
+  <text x="735" y="284" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#9A3412">检查通过？</text>
+  <rect x="460" y="440" width="235" height="98" rx="14" fill="#FEF2F2" stroke="#F87171" stroke-width="2" filter="url(#shadow)"/>
+  <text x="577" y="478" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="19" font-weight="700" fill="#991B1B">记录错误信息</text>
+  <text x="577" y="506" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">区分代码和环境原因</text>
+
+  <rect x="870" y="156" width="316" height="430" rx="18" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="898" y="194" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#475569">下一步</text>
+  <rect x="895" y="236" width="266" height="105" rx="14" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1028" y="278" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="21" font-weight="700" fill="#075985">进入审查或后续流程</text>
+  <text x="1028" y="309" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">保存补丁和检查记录</text>
+  <polygon points="1028,376 1120,430 1028,484 936,430" fill="#FFFBEB" stroke="#FBBF24" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1028" y="425" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="19" font-weight="700" fill="#92400E">还能重试吗？</text>
+  <rect x="895" y="525" width="266" height="45" rx="12" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+  <text x="1028" y="555" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" font-weight="700" fill="#1D4ED8">否：说明未完成原因并交接</text>
+
+  <path d="M296 288 H366" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M554 288 H625" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M835 288 H885" stroke="#22C55E" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="850" y="270" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#166534">是</text>
+  <path d="M735 346 V405 H577 V430" stroke="#E11D48" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="755" y="382" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#991B1B">否</text>
+  <path d="M695 489 H925" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M936 430 H710 V554 H186 V355" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+  <text x="447" y="548" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#5B21B6">是：带着错误信息返回模型重试</text>
+  <path d="M1028 484 V515" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+</svg>

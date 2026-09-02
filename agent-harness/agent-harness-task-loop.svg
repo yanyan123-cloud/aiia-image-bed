@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="760" viewBox="0 0 1240 760" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Harness 任务闭环状态机</title>
+  <desc id="desc">从验收条件、受限修改、独立检查到失败归因和人工交接的任务闭环。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" refX="12" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#52616B"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#18364A" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="1240" height="760" fill="#F7FAFC"/>
+  <rect x="40" y="32" width="1160" height="82" rx="18" fill="#143A52"/>
+  <text x="76" y="80" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="31" font-weight="700" fill="#FFFFFF">任务闭环状态机：把“已完成”变成可验证的交付</text>
+  <text x="76" y="102" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#D7E8F0">Harness 规定动作边界、检查顺序和失败后的去向</text>
+
+  <rect x="40" y="146" width="1160" height="316" rx="18" fill="#FFFFFF" stroke="#DDE6EC"/>
+  <text x="68" y="181" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="18" font-weight="700" fill="#52616B">主流程</text>
+
+  <g filter="url(#shadow)">
+    <rect x="68" y="211" width="210" height="152" rx="16" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+    <rect x="302" y="211" width="210" height="152" rx="16" fill="#F3E8FF" stroke="#A855F7" stroke-width="2"/>
+    <rect x="536" y="211" width="210" height="152" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2"/>
+    <rect x="770" y="211" width="210" height="152" rx="16" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+    <rect x="1004" y="211" width="168" height="152" rx="16" fill="#E0E7FF" stroke="#6366F1" stroke-width="2"/>
+  </g>
+
+  <text x="173" y="250" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="22" font-weight="700" fill="#075985">1. 预设验收</text>
+  <text x="173" y="285" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">任务目标</text>
+  <text x="173" y="313" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">必须通过的检查</text>
+
+  <text x="407" y="250" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="22" font-weight="700" fill="#6B21A8">2. 边界修改</text>
+  <text x="407" y="285" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">限定文件和权限</text>
+  <text x="407" y="313" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">生成候选补丁</text>
+
+  <text x="641" y="250" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="22" font-weight="700" fill="#166534">3. 独立裁判</text>
+  <text x="641" y="285" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">测试、编译或静态检查</text>
+  <text x="641" y="313" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">结果由模型外部产生</text>
+
+  <text x="875" y="250" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="22" font-weight="700" fill="#9A3412">4. 归因分流</text>
+  <text x="875" y="285" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">代码问题？</text>
+  <text x="875" y="313" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">工具或环境问题？</text>
+
+  <text x="1088" y="250" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="22" font-weight="700" fill="#3730A3">5. 留存证据</text>
+  <text x="1088" y="285" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">补丁</text>
+  <text x="1088" y="313" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">检查记录</text>
+
+  <path d="M278 287 H294" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M512 287 H528" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M746 287 H762" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M980 287 H996" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="490" width="1160" height="226" rx="18" fill="#FFFFFF" stroke="#DDE6EC"/>
+  <text x="68" y="527" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="18" font-weight="700" fill="#52616B">检查不满足验收条件时</text>
+  <g filter="url(#shadow)">
+    <rect x="70" y="555" width="315" height="112" rx="14" fill="#FEF2F2" stroke="#F87171" stroke-width="2"/>
+    <rect x="462" y="555" width="315" height="112" rx="14" fill="#FFFBEB" stroke="#FBBF24" stroke-width="2"/>
+    <rect x="854" y="555" width="315" height="112" rx="14" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+  </g>
+  <text x="227" y="595" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#991B1B">不要静默吞掉异常</text>
+  <text x="227" y="627" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">记录失败节点和真实调用结果</text>
+  <text x="619" y="595" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#92400E">能继续才重试</text>
+  <text x="619" y="627" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">补足依赖或回到受限修改阶段</text>
+  <text x="1011" y="595" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#1D4ED8">不能继续就交接</text>
+  <text x="1011" y="627" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">保留现场，由人决定下一步</text>
+  <path d="M385 611 H454" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M777 611 H846" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+</svg>
