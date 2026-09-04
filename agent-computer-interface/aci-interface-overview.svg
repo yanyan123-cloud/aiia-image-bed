@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="700" viewBox="0 0 1240 700" role="img" aria-labelledby="title desc">
+  <title id="title">Agent-Computer Interface：Agent 如何与代码环境协作</title>
+  <desc id="desc">ACI 在 Agent 和代码环境之间组织搜索、浏览、局部编辑和运行命令，并返回简洁反馈。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" refX="12" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#52616B"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#18364A" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="1240" height="700" fill="#F7FAFC"/>
+  <rect x="40" y="32" width="1160" height="82" rx="18" fill="#143A52"/>
+  <text x="76" y="80" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="31" font-weight="700" fill="#FFFFFF">Agent-Computer Interface：让 Agent 看清动作和反馈</text>
+  <text x="76" y="102" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#D7E8F0">ACI 不替 Agent 作决定，它把操作和环境结果组织成可继续使用的信息</text>
+
+  <rect x="40" y="146" width="1160" height="360" rx="18" fill="#FFFFFF" stroke="#DDE6EC"/>
+  <text x="68" y="184" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="18" font-weight="700" fill="#52616B">一次交互的两条信息流</text>
+
+  <g filter="url(#shadow)">
+    <rect x="74" y="230" width="230" height="182" rx="18" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+    <rect x="408" y="208" width="424" height="226" rx="18" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+    <rect x="936" y="230" width="230" height="182" rx="18" fill="#ECFDF5" stroke="#34D399" stroke-width="2"/>
+  </g>
+
+  <text x="189" y="277" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="27" font-weight="700" fill="#5B21B6">Agent</text>
+  <text x="189" y="317" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">根据当前任务</text>
+  <text x="189" y="346" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">选择下一步动作</text>
+
+  <text x="620" y="257" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="27" font-weight="700" fill="#075985">ACI</text>
+  <text x="620" y="286" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">把通用终端能力整理成有限、明确的操作</text>
+  <g font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" font-weight="700">
+    <rect x="445" y="318" width="80" height="58" rx="12" fill="#FFFFFF" stroke="#7DD3FC"/><text x="485" y="353" text-anchor="middle" fill="#075985">搜索</text>
+    <rect x="540" y="318" width="80" height="58" rx="12" fill="#FFFFFF" stroke="#7DD3FC"/><text x="580" y="353" text-anchor="middle" fill="#075985">浏览</text>
+    <rect x="635" y="318" width="80" height="58" rx="12" fill="#FFFFFF" stroke="#7DD3FC"/><text x="675" y="353" text-anchor="middle" fill="#075985">编辑</text>
+    <rect x="730" y="318" width="80" height="58" rx="12" fill="#FFFFFF" stroke="#7DD3FC"/><text x="770" y="353" text-anchor="middle" fill="#075985">运行</text>
+  </g>
+
+  <text x="1051" y="277" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="27" font-weight="700" fill="#047857">代码环境</text>
+  <text x="1051" y="317" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">仓库、文件、命令</text>
+  <text x="1051" y="346" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">以及真实执行结果</text>
+
+  <path d="M304 292 H398" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="351" y="278" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="15" fill="#475569">动作</text>
+  <path d="M832 292 H926" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="879" y="278" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="15" fill="#475569">执行</text>
+  <path d="M936 390 H842 Q620 477 398 390 H304" fill="none" stroke="#0EA5E9" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+  <text x="620" y="465" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" font-weight="700" fill="#075985">ACI 返回：当前位置、局部结果、错误原因和下一步所需的环境状态</text>
+
+  <rect x="40" y="536" width="1160" height="128" rx="18" fill="#FFFFFF" stroke="#DDE6EC"/>
+  <text x="74" y="579" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#0F172A">设计重点</text>
+  <g font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">
+    <text x="74" y="616">• 动作范围明确，避免把复杂命令细节留给 Agent 猜测</text>
+    <text x="457" y="616">• 反馈足够具体，又不把无关内容塞满上下文</text>
+    <text x="850" y="616">• 发生错误时，让 Agent 知道哪里出了问题</text>
+  </g>
+</svg>

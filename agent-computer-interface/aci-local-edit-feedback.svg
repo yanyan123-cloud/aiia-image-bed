@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="720" viewBox="0 0 1240 720" role="img" aria-labelledby="title desc">
+  <title id="title">局部编辑与即时反馈</title>
+  <desc id="desc">Agent 通过 ACI 指定行范围编辑文件，系统检查编辑结果。有效编辑返回更新片段，无效编辑返回错误并丢弃修改。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" refX="12" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#52616B"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#18364A" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="1240" height="720" fill="#F7FAFC"/>
+  <rect x="40" y="32" width="1160" height="82" rx="18" fill="#143A52"/>
+  <text x="76" y="80" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="31" font-weight="700" fill="#FFFFFF">局部编辑与即时反馈：错误别带到下一轮</text>
+  <text x="76" y="102" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#D7E8F0">ACI 让 Agent 在指定范围编辑，并把有效修改或明确错误立即返回</text>
+
+  <rect x="40" y="146" width="1160" height="510" rx="18" fill="#FFFFFF" stroke="#DDE6EC"/>
+  <text x="68" y="184" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="18" font-weight="700" fill="#52616B">编辑循环</text>
+
+  <g filter="url(#shadow)">
+    <rect x="75" y="250" width="215" height="120" rx="16" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+    <rect x="365" y="250" width="250" height="120" rx="16" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+    <polygon points="770,236 885,310 770,384 655,310" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
+    <rect x="945" y="204" width="205" height="122" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2"/>
+    <rect x="945" y="430" width="205" height="122" rx="16" fill="#FEF2F2" stroke="#F87171" stroke-width="2"/>
+  </g>
+
+  <text x="182" y="292" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="22" font-weight="700" fill="#5B21B6">指定编辑范围</text>
+  <text x="182" y="323" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">起始行、结束行</text>
+  <text x="182" y="348" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">替换文本</text>
+
+  <text x="490" y="292" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="22" font-weight="700" fill="#075985">ACI 应用编辑</text>
+  <text x="490" y="323" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">展示修改后的局部片段</text>
+  <text x="490" y="348" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">触发语法检查</text>
+
+  <text x="770" y="304" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#9A3412">编辑有效？</text>
+
+  <text x="1047" y="247" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="21" font-weight="700" fill="#166534">接受这次编辑</text>
+  <text x="1047" y="278" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">返回更新后的片段</text>
+  <text x="1047" y="303" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">供 Agent 继续判断</text>
+
+  <text x="1047" y="473" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="21" font-weight="700" fill="#991B1B">丢弃无效编辑</text>
+  <text x="1047" y="504" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">返回 Lint 错误和相关片段</text>
+  <text x="1047" y="529" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#334155">要求 Agent 修改方案</text>
+
+  <path d="M290 310 H355" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M615 310 H645" stroke="#52616B" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M885 310 H935" stroke="#22C55E" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="911" y="291" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#166534">是</text>
+  <path d="M770 384 V491 H935" fill="none" stroke="#E11D48" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="790" y="421" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="16" fill="#991B1B">否</text>
+  <path d="M945 491 H710 V602 H182 V380" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow)"/>
+  <text x="538" y="627" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" font-weight="700" fill="#5B21B6">带着具体错误重新编辑，而不是在错误状态上继续执行</text>
+</svg>
