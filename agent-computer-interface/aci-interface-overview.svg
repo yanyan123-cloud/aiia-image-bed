@@ -45,9 +45,17 @@
 
   <rect x="40" y="536" width="1160" height="128" rx="18" fill="#FFFFFF" stroke="#DDE6EC"/>
   <text x="74" y="579" font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="20" font-weight="700" fill="#0F172A">设计重点</text>
-  <g font-family="Microsoft YaHei, Noto Sans SC, Arial" font-size="17" fill="#334155">
-    <text x="74" y="616">• 动作范围明确，避免把复杂命令细节留给 Agent 猜测</text>
-    <text x="457" y="616">• 反馈足够具体，又不把无关内容塞满上下文</text>
-    <text x="850" y="616">• 发生错误时，让 Agent 知道哪里出了问题</text>
+  <g filter="url(#shadow)">
+    <rect x="74" y="594" width="344" height="50" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <rect x="448" y="594" width="344" height="50" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <rect x="822" y="594" width="344" height="50" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  </g>
+  <g font-family="Microsoft YaHei, Noto Sans SC, Arial" fill="#334155">
+    <text x="96" y="616" font-size="16" font-weight="700" fill="#075985">动作范围明确</text>
+    <text x="96" y="636" font-size="14">避免让 Agent 猜测复杂命令细节</text>
+    <text x="470" y="616" font-size="16" font-weight="700" fill="#075985">反馈应具体</text>
+    <text x="470" y="636" font-size="14">不把无关内容塞满上下文</text>
+    <text x="844" y="616" font-size="16" font-weight="700" fill="#075985">发生错误时</text>
+    <text x="844" y="636" font-size="14">让 Agent 知道问题在哪里</text>
   </g>
 </svg>
