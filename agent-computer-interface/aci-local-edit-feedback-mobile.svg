@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1020" viewBox="0 0 720 1020" role="img" aria-labelledby="title desc">
+  <title id="title">局部编辑后的即时检查</title>
+  <desc id="desc">Agent 指定编辑范围，ACI 生成修改预览并运行 Lint；通过后接受修改，报错时丢弃改动并保留原文件。这是工作界面的设计示意。</desc>
+  <rect width="720" height="1020" fill="#F7FAFC"/>
+  <rect x="24" y="24" width="672" height="88" rx="18" fill="#143A52"/>
+  <text x="48" y="65" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">编辑出错，当场退回</text>
+  <text x="48" y="94" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" fill="#D7E8F0">局部修改先检查，再决定是否接受</text>
+
+  <rect x="24" y="142" width="672" height="128" rx="18" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="2"/>
+  <text x="48" y="188" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="27" font-weight="700" fill="#5B21B6">1  Agent 指定编辑范围</text>
+  <text x="48" y="224" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" fill="#334155">文件、起止行号、替换文本</text>
+  <path d="M360 273 V298" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M352 291 L360 301 L368 291" fill="none" stroke="#38BDF8" stroke-width="3"/>
+
+  <rect x="24" y="310" width="672" height="128" rx="18" fill="#E0F2FE" stroke="#7DD3FC" stroke-width="2"/>
+  <text x="48" y="356" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="27" font-weight="700" fill="#075985">2  ACI 生成修改后的预览</text>
+  <text x="48" y="392" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" fill="#334155">先看新片段，原文件暂不替换</text>
+  <path d="M360 441 V466" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M352 459 L360 469 L368 459" fill="none" stroke="#38BDF8" stroke-width="3"/>
+
+  <rect x="24" y="478" width="672" height="128" rx="18" fill="#FFF7ED" stroke="#FDBA74" stroke-width="2"/>
+  <text x="48" y="524" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="27" font-weight="700" fill="#9A3412">3  Lint 检查语法</text>
+  <text x="48" y="560" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" fill="#334155">例如缩进、括号等选定错误</text>
+  <text x="360" y="636" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" fill="#64748B">检查会给出两种结果</text>
+
+  <rect x="24" y="646" width="672" height="116" rx="18" fill="#ECFDF5" stroke="#86EFAC" stroke-width="2"/>
+  <text x="48" y="692" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="27" font-weight="700" fill="#166534">通过时：接受编辑</text>
+  <text x="48" y="730" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" fill="#334155">返回更新后的片段，供 Agent 继续判断</text>
+
+  <rect x="24" y="782" width="672" height="116" rx="18" fill="#FFF1F2" stroke="#FDA4AF" stroke-width="2"/>
+  <text x="48" y="828" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="27" font-weight="700" fill="#9F1239">报错时：丢弃本次编辑</text>
+  <text x="48" y="866" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" fill="#334155">原文件不变，返回行号和出错片段</text>
+
+  <text x="36" y="951" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="21" fill="#475569">Lint 只拦选定的语法错误；任务仍须测试或复核。</text>
+  <text x="36" y="983" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#64748B">设计示意：具体检查与保存顺序依工具实现而定</text>
+</svg>
