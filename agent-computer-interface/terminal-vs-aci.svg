@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="850" viewBox="0 0 720 850" role="img" aria-labelledby="title desc">
+  <title id="title">同一次搜索：终端原样输出与 ACI 反馈</title>
+  <desc id="desc">上方是终端直接返回大量混杂匹配，下方是 ACI 在结果过多时要求缩小查询，并用路径和行号返回少量候选。</desc>
+  <rect width="720" height="850" fill="#F7FAFC"/>
+  <rect x="24" y="24" width="672" height="84" rx="18" fill="#143A52"/>
+  <text x="48" y="62" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="29" font-weight="700" fill="#FFFFFF">同一次搜索，两种回执</text>
+  <text x="48" y="90" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#D7E8F0">关键不是能否运行命令，而是下一步能否看清</text>
+
+  <rect x="24" y="132" width="672" height="300" rx="18" fill="#FFFFFF" stroke="#D7E2EA"/>
+  <rect x="44" y="152" width="632" height="50" rx="12" fill="#FFF1F2"/>
+  <text x="62" y="185" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" font-weight="700" fill="#9F1239">原样终端输出</text>
+  <text x="56" y="238" font-family="Consolas, monospace" font-size="19" fill="#334155">$ grep -R "login" .</text>
+  <text x="56" y="278" font-family="Consolas, monospace" font-size="18" fill="#64748B">tests/fixture.py:88  login...</text>
+  <text x="56" y="310" font-family="Consolas, monospace" font-size="18" fill="#64748B">build/cache.log:41  login...</text>
+  <text x="56" y="342" font-family="Consolas, monospace" font-size="18" fill="#334155">src/auth.py:42  login...</text>
+  <text x="56" y="374" font-family="Consolas, monospace" font-size="18" fill="#94A3B8">...更多匹配和无关上下文...</text>
+  <text x="56" y="410" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" fill="#9F1239">候选混在长输出里，Agent 还得重新筛选</text>
+
+  <rect x="24" y="456" width="672" height="362" rx="18" fill="#FFFFFF" stroke="#D7E2EA"/>
+  <rect x="44" y="476" width="632" height="50" rx="12" fill="#E0F2FE"/>
+  <text x="62" y="509" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" font-weight="700" fill="#075985">ACI 的搜索回执</text>
+  <rect x="56" y="550" width="608" height="76" rx="12" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="76" y="581" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="21" fill="#334155">搜索 login：结果超过上限</text>
+  <text x="76" y="609" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" fill="#075985">请限定目录或使用更具体的词</text>
+  <path d="M360 629 V655" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M352 648 L360 658 L368 648" fill="none" stroke="#38BDF8" stroke-width="3"/>
+  <rect x="56" y="664" width="608" height="94" rx="12" fill="#ECFDF5" stroke="#86EFAC"/>
+  <text x="76" y="698" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="21" fill="#166534">限定 src/auth 后，返回少量候选</text>
+  <text x="76" y="733" font-family="Consolas, monospace" font-size="20" fill="#334155">src/auth.py:42  login(...)</text>
+  <text x="56" y="798" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" fill="#64748B">示意图：具体上限与返回格式取决于实现</text>
+</svg>

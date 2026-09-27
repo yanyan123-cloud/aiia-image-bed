@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="830" viewBox="0 0 720 830" role="img" aria-labelledby="title desc">
+  <title id="title">Harness、ACI 与代码环境的职责边界</title>
+  <desc id="desc">外层 Harness 规定任务范围与验收条件，内层 ACI 组织 Agent 的单步动作和回执，代码环境执行操作并返回结果。</desc>
+  <rect width="720" height="830" fill="#F7FAFC"/>
+  <rect x="24" y="24" width="672" height="84" rx="18" fill="#143A52"/>
+  <text x="48" y="62" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="29" font-weight="700" fill="#FFFFFF">谁管一步，谁管整项任务？</text>
+  <text x="48" y="90" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#D7E8F0">Harness 设边界，ACI 管交互，环境给出结果</text>
+
+  <rect x="24" y="132" width="672" height="646" rx="22" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="3"/>
+  <text x="52" y="180" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="27" font-weight="700" fill="#5B21B6">Harness：整项任务的规则</text>
+  <text x="52" y="220" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" fill="#334155">允许改哪里、何时测试、怎样判定完成</text>
+
+  <rect x="56" y="254" width="608" height="310" rx="18" fill="#FFFFFF" stroke="#CBD5E1"/>
+  <rect x="78" y="278" width="564" height="76" rx="14" fill="#E0F2FE"/>
+  <text x="100" y="310" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" fill="#075985">ACI：单步操作的界面</text>
+  <text x="100" y="340" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" fill="#334155">限定动作，返回位置、结果和错误</text>
+  <rect x="88" y="394" width="228" height="104" rx="14" fill="#F5F3FF" stroke="#C4B5FD"/>
+  <text x="202" y="436" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" fill="#5B21B6">Agent</text>
+  <text x="202" y="471" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" fill="#475569">提出下一步动作</text>
+  <path d="M318 446 H372" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M364 438 L374 446 L364 454" fill="none" stroke="#38BDF8" stroke-width="3"/>
+  <rect x="380" y="394" width="240" height="104" rx="14" fill="#F0F9FF" stroke="#7DD3FC"/>
+  <text x="500" y="436" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" font-weight="700" fill="#075985">搜索 / 浏览 / 编辑</text>
+  <text x="500" y="471" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="19" fill="#475569">ACI 组织动作与回执</text>
+  <text x="92" y="540" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#64748B">一次操作结束，Agent 据回执决定下一步</text>
+
+  <path d="M360 565 V604" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M352 597 L360 607 L368 597" fill="none" stroke="#38BDF8" stroke-width="3"/>
+  <rect x="56" y="616" width="608" height="112" rx="18" fill="#ECFDF5" stroke="#86EFAC"/>
+  <text x="80" y="662" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="25" font-weight="700" fill="#166534">代码环境</text>
+  <text x="80" y="700" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" fill="#334155">仓库与工具真实执行，返回文件或命令结果</text>
+</svg>

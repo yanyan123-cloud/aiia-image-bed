@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="830" viewBox="0 0 720 830" role="img" aria-labelledby="title desc">
+  <title id="title">SWE-agent 的 100 行文件视窗</title>
+  <desc id="desc">从长文件中只展开当前最多 100 行，并在回执中标出路径、行号和被省略的行数。</desc>
+  <rect width="720" height="830" fill="#F7FAFC"/>
+  <rect x="24" y="24" width="672" height="84" rx="18" fill="#143A52"/>
+  <text x="48" y="62" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="29" font-weight="700" fill="#FFFFFF">长文件，只展开当前窗口</text>
+  <text x="48" y="90" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#D7E8F0">SWE-agent 一次最多展示 100 行</text>
+
+  <rect x="24" y="132" width="672" height="190" rx="18" fill="#FFFFFF" stroke="#D7E2EA"/>
+  <text x="48" y="171" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" font-weight="700" fill="#0F172A">一个 2000 行的文件</text>
+  <rect x="48" y="194" width="624" height="31" rx="8" fill="#E2E8F0"/>
+  <text x="66" y="217" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#475569">1–400 行：当前省略</text>
+  <rect x="48" y="232" width="624" height="39" rx="8" fill="#BAE6FD" stroke="#38BDF8"/>
+  <text x="66" y="259" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="20" font-weight="700" fill="#075985">401–500 行：当前视窗</text>
+  <rect x="48" y="278" width="624" height="30" rx="8" fill="#E2E8F0"/>
+  <text x="66" y="300" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#475569">501–2000 行：当前省略</text>
+
+  <path d="M360 326 V354" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M352 347 L360 357 L368 347" fill="none" stroke="#38BDF8" stroke-width="3"/>
+  <rect x="24" y="364" width="672" height="370" rx="18" fill="#FFFFFF" stroke="#D7E2EA"/>
+  <text x="48" y="405" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="23" font-weight="700" fill="#0F172A">Agent 收到的局部视图</text>
+  <rect x="48" y="427" width="624" height="56" rx="10" fill="#E0F2FE"/>
+  <text x="66" y="451" font-family="Consolas, monospace" font-size="18" fill="#075985">src/auth.py · 2000 lines</text>
+  <text x="66" y="474" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="17" fill="#075985">前面省略 400 行，后面省略 1500 行</text>
+  <text x="66" y="526" xml:space="preserve" font-family="Consolas, monospace" font-size="20" fill="#64748B">401  def verify_token(token):</text>
+  <rect x="53" y="540" width="614" height="42" rx="7" fill="#FEF3C7"/>
+  <text x="66" y="568" xml:space="preserve" font-family="Consolas, monospace" font-size="20" fill="#92400E">402      if token is None:</text>
+  <text x="66" y="615" xml:space="preserve" font-family="Consolas, monospace" font-size="20" fill="#334155">403          return False</text>
+  <text x="66" y="660" font-family="Consolas, monospace" font-size="20" fill="#64748B">...  当前窗口其余行  ...</text>
+  <text x="48" y="711" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#475569">需要其他位置时，再滚动或跳转到指定行</text>
+  <text x="48" y="777" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" fill="#64748B">示意图：行号和代码仅用于解释视窗机制</text>
+</svg>
