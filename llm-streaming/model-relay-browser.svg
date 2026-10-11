@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380" role="img" aria-labelledby="title desc">
+  <title id="title">文字怎样到达聊天气泡</title>
+  <desc id="desc">回复从模型服务传给业务后端，再由后端传给浏览器，浏览器接收后更新同一条回复。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#52616B"/></marker>
+  </defs>
+  <style>
+    text { font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif; fill: #334155; }
+    .title { font-size: 32px; font-weight: 700; fill: #FFFFFF; }
+    .label { font-size: 30px; font-weight: 700; }
+    .detail { font-size: 28px; }
+    .muted { fill: #52616B; }
+    .arrow { fill: none; stroke: #52616B; stroke-width: 3; marker-end: url(#arrow); }
+  </style>
+  <rect width="720" height="380" fill="#F7FAFC"/>
+  <rect x="24" y="24" width="672" height="76" rx="16" fill="#143A52"/>
+  <text x="48" y="73" class="title">文字怎样到达聊天气泡</text>
+  <rect x="36" y="142" width="184" height="160" rx="16" fill="#EDE9FE" stroke="#A78BFA" stroke-width="2"/>
+  <rect x="268" y="142" width="184" height="160" rx="16" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <rect x="500" y="142" width="184" height="160" rx="16" fill="#DCFCE7" stroke="#4ADE80" stroke-width="2"/>
+  <text x="128" y="192" text-anchor="middle" class="label" style="fill:#5B21B6">模型服务</text>
+  <text x="128" y="238" text-anchor="middle" class="detail">生成文本</text>
+  <text x="128" y="275" text-anchor="middle" class="detail">逐步返回</text>
+  <text x="360" y="192" text-anchor="middle" class="label" style="fill:#075985">业务后端</text>
+  <text x="360" y="238" text-anchor="middle" class="detail">请求模型</text>
+  <text x="360" y="275" text-anchor="middle" class="detail">转发片段</text>
+  <text x="592" y="192" text-anchor="middle" class="label" style="fill:#166534">浏览器</text>
+  <text x="592" y="238" text-anchor="middle" class="detail">接收事件</text>
+  <text x="592" y="275" text-anchor="middle" class="detail">更新气泡</text>
+  <path d="M225 222 H260" class="arrow"/>
+  <path d="M457 222 H492" class="arrow"/>
+  <text x="360" y="350" text-anchor="middle" class="detail muted">这里画的是回复的传输方向</text>
+</svg>

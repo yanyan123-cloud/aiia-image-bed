@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">新增文字，追加到同一条回复</title>
+  <desc id="desc">三条新增文本事件分别携带先、复习、基础。页面按顺序追加，累计显示先复习基础。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#52616B"/></marker>
+  </defs>
+  <style>
+    text { font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif; fill: #334155; }
+    .title { font-size: 32px; font-weight: 700; fill: #FFFFFF; }
+    .label { font-size: 30px; font-weight: 700; }
+    .detail { font-size: 28px; }
+    .muted { fill: #52616B; }
+    .arrow { fill: none; stroke: #52616B; stroke-width: 3; marker-end: url(#arrow); }
+  </style>
+  <rect width="720" height="460" fill="#F7FAFC"/>
+  <rect x="24" y="24" width="672" height="76" rx="16" fill="#143A52"/>
+  <text x="48" y="73" class="title">新增文字，追加到同一条回复</text>
+  <rect x="24" y="126" width="212" height="274" rx="16" fill="#FFFFFF" stroke="#D7E2EA"/>
+  <rect x="254" y="126" width="212" height="274" rx="16" fill="#FFFFFF" stroke="#D7E2EA"/>
+  <rect x="484" y="126" width="212" height="274" rx="16" fill="#FFFFFF" stroke="#D7E2EA"/>
+  <text x="130" y="168" text-anchor="middle" class="label">事件 1</text>
+  <text x="360" y="168" text-anchor="middle" class="label">事件 2</text>
+  <text x="590" y="168" text-anchor="middle" class="label">事件 3</text>
+  <text x="130" y="218" text-anchor="middle" class="label" style="fill:#075985">先</text>
+  <text x="360" y="218" text-anchor="middle" class="label" style="fill:#075985">复习</text>
+  <text x="590" y="218" text-anchor="middle" class="label" style="fill:#075985">基础。</text>
+  <path d="M130 240 V270" class="arrow"/>
+  <path d="M360 240 V270" class="arrow"/>
+  <path d="M590 240 V270" class="arrow"/>
+  <rect x="36" y="282" width="188" height="72" rx="12" fill="#DCFCE7"/>
+  <rect x="266" y="282" width="188" height="72" rx="12" fill="#DCFCE7"/>
+  <rect x="496" y="282" width="188" height="72" rx="12" fill="#DCFCE7"/>
+  <text x="130" y="327" text-anchor="middle" class="detail" style="fill:#166534">先</text>
+  <text x="360" y="327" text-anchor="middle" class="detail" style="fill:#166534">先复习</text>
+  <text x="590" y="327" text-anchor="middle" class="detail" style="fill:#166534">先复习基础。</text>
+  <text x="130" y="384" text-anchor="middle" class="detail muted">当前气泡</text>
+  <text x="360" y="384" text-anchor="middle" class="detail muted">当前气泡</text>
+  <text x="590" y="384" text-anchor="middle" class="detail muted">当前气泡</text>
+  <text x="360" y="436" text-anchor="middle" class="detail muted">顺序追加，保留已有文字</text>
+</svg>

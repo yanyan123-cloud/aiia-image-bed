@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="410" viewBox="0 0 720 410" role="img" aria-labelledby="title desc">
+  <title id="title">文字停了，页面要说明原因</title>
+  <desc id="desc">正常结束时依据结束事件，意外断开时提示回复中断，用户主动停止时提示已停止。输出长度上限等原因还需要另外说明。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#52616B"/></marker>
+  </defs>
+  <style>
+    text { font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif; fill: #334155; }
+    .title { font-size: 32px; font-weight: 700; fill: #FFFFFF; }
+    .label { font-size: 30px; font-weight: 700; }
+    .detail { font-size: 28px; }
+    .muted { fill: #52616B; }
+    .arrow { fill: none; stroke: #52616B; stroke-width: 3; marker-end: url(#arrow); }
+  </style>
+  <rect width="720" height="410" fill="#F7FAFC"/>
+  <rect x="24" y="24" width="672" height="76" rx="16" fill="#143A52"/>
+  <text x="48" y="73" class="title">文字停了，页面要说明原因</text>
+  <rect x="24" y="126" width="212" height="226" rx="16" fill="#FFFFFF" stroke="#86EFAC" stroke-width="2"/>
+  <rect x="254" y="126" width="212" height="226" rx="16" fill="#FFFFFF" stroke="#FDBA74" stroke-width="2"/>
+  <rect x="484" y="126" width="212" height="226" rx="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <text x="130" y="172" text-anchor="middle" class="label" style="fill:#166534">正常结束</text>
+  <text x="360" y="172" text-anchor="middle" class="label" style="fill:#9A3412">连接中断</text>
+  <text x="590" y="172" text-anchor="middle" class="label">用户停止</text>
+  <text x="130" y="218" text-anchor="middle" class="detail">结束事件</text>
+  <text x="130" y="260" text-anchor="middle" class="detail">按约定到达</text>
+  <text x="360" y="218" text-anchor="middle" class="detail">结束事件</text>
+  <text x="360" y="260" text-anchor="middle" class="detail">尚未收到</text>
+  <text x="590" y="218" text-anchor="middle" class="detail">用户点击</text>
+  <text x="590" y="260" text-anchor="middle" class="detail">停止按钮</text>
+  <rect x="42" y="279" width="176" height="52" rx="12" fill="#DCFCE7"/>
+  <rect x="272" y="279" width="176" height="52" rx="12" fill="#FFF7ED"/>
+  <rect x="502" y="279" width="176" height="52" rx="12" fill="#F1F5F9"/>
+  <text x="130" y="315" text-anchor="middle" class="label" style="fill:#166534">已结束</text>
+  <text x="360" y="315" text-anchor="middle" class="label" style="fill:#9A3412">回复中断</text>
+  <text x="590" y="315" text-anchor="middle" class="label">已停止</text>
+  <text x="360" y="386" text-anchor="middle" class="detail muted">长度上限等结束原因，还需单独说明</text>
+</svg>

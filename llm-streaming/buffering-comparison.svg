@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="470" viewBox="0 0 720 470" role="img" aria-labelledby="title desc">
+  <title id="title">文字在哪一段被攒住了？</title>
+  <desc id="desc">上方示意新片段经过中间环节及时转发，页面更新。下方示意中间环节暂存片段，页面仍在等待。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#52616B"/></marker>
+  </defs>
+  <style>
+    text { font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif; fill: #334155; }
+    .title { font-size: 32px; font-weight: 700; fill: #FFFFFF; }
+    .label { font-size: 30px; font-weight: 700; }
+    .detail { font-size: 28px; }
+    .muted { fill: #52616B; }
+    .arrow { fill: none; stroke: #52616B; stroke-width: 3; marker-end: url(#arrow); }
+  </style>
+  <rect width="720" height="470" fill="#F7FAFC"/>
+  <rect x="24" y="24" width="672" height="76" rx="16" fill="#143A52"/>
+  <text x="48" y="73" class="title">文字在哪一段被攒住了？</text>
+  <rect x="24" y="124" width="672" height="132" rx="16" fill="#FFFFFF" stroke="#D7E2EA"/>
+  <text x="44" y="161" class="label" style="fill:#166534">及时转发</text>
+  <rect x="44" y="180" width="140" height="56" rx="10" fill="#EDE9FE"/>
+  <rect x="282" y="180" width="156" height="56" rx="10" fill="#E0F2FE"/>
+  <rect x="528" y="180" width="152" height="56" rx="10" fill="#DCFCE7"/>
+  <text x="114" y="218" text-anchor="middle" class="label">新片段</text>
+  <text x="360" y="218" text-anchor="middle" class="label">中间环节</text>
+  <text x="604" y="218" text-anchor="middle" class="label">页面更新</text>
+  <path d="M190 208 H274" class="arrow"/>
+  <path d="M444 208 H520" class="arrow"/>
+  <rect x="216" y="188" width="18" height="14" rx="3" fill="#38BDF8"/>
+  <rect x="243" y="188" width="18" height="14" rx="3" fill="#38BDF8"/>
+  <rect x="464" y="188" width="18" height="14" rx="3" fill="#38BDF8"/>
+  <rect x="491" y="188" width="18" height="14" rx="3" fill="#38BDF8"/>
+  <rect x="24" y="282" width="672" height="134" rx="16" fill="#FFFFFF" stroke="#D7E2EA"/>
+  <text x="44" y="319" class="label" style="fill:#9A3412">攒齐再转</text>
+  <rect x="44" y="338" width="140" height="56" rx="10" fill="#EDE9FE"/>
+  <rect x="282" y="338" width="156" height="56" rx="10" fill="#FFF7ED"/>
+  <rect x="528" y="338" width="152" height="56" rx="10" fill="#F1F5F9"/>
+  <text x="114" y="376" text-anchor="middle" class="label">新片段</text>
+  <text x="360" y="376" text-anchor="middle" class="label">暂存片段</text>
+  <text x="604" y="376" text-anchor="middle" class="label muted">仍在等待</text>
+  <path d="M190 366 H274" class="arrow"/>
+  <path d="M444 366 H520" class="arrow" stroke-dasharray="8 7"/>
+  <rect x="216" y="346" width="18" height="14" rx="3" fill="#38BDF8"/>
+  <rect x="243" y="346" width="18" height="14" rx="3" fill="#38BDF8"/>
+  <text x="360" y="454" text-anchor="middle" class="detail muted">检查后端拼接、代理缓冲和页面读取</text>
+</svg>
